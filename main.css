@@ -163,6 +163,7 @@ body {
     align-items: center;
     position: relative;
     padding: 20px;
+    border: solid #63297c .4em;
     border-radius: 8px;
     transition: width 0.3s ease;
 }
@@ -170,4 +171,17 @@ body {
 .content a {
     color: #f5f5f7;
     font-size: 2em;
+}
+
+.controls {
+    cursor: pointer;
+}
+
+.controls,
+.subClass {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 1em;
 }
