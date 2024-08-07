@@ -174,7 +174,8 @@ body {
     font-size: 2em;
 }
 
-.controls {
+.controls,
+#exitButton {
     cursor: pointer;
 }
 

@@ -154,3 +154,14 @@ async function fillAbilityData(abilityName) {
         console.log('No such document!');
     }
 }
+
+document.getElementById('exitButton').onclick = function () {
+    document.getElementById('characterList').innerHTML = ""
+    document.getElementById('abilityList').innerHTML = ""
+    document.getElementById('expandedCard').innerHTML = ""
+    document.getElementById('modal').style.display = 'none'; // Close the modal after selection
+    let contentElements = document.getElementsByClassName('content');
+    for (let i = 0; i < contentElements.length; i++) {
+        contentElements[i].style.display = "flex"; // Show the main content again
+    }
+}
