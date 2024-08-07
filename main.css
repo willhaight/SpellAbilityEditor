@@ -152,7 +152,8 @@ body {
 }
 
 /* Content styling */
-.content {
+.content,
+#modal {
     margin-top: 3em;
     background-color: #2c2c2e;
     color: #f5f5f7;
@@ -184,4 +185,21 @@ body {
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 1em;
+}
+
+#modal {
+    display: none;
+    flex-direction: column;
+    /* Add other necessary styles */
+}
+
+#abilityList {
+    display: flex;
+    flex-direction: column;
+    /* Add other necessary styles */
+}
+
+.ability-option {
+    cursor: pointer;
+    /* Add other necessary styles */
 }
