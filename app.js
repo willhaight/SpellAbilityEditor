@@ -131,6 +131,9 @@ grabAbilityButton.onclick = async function () {
 };
 
 async function fillAbilityData(abilityName) {
+    document.getElementById('characterList').innerHTML = ""
+    document.getElementById('abilityList').innerHTML = ""
+    document.getElementById('expandedCard').innerHTML = ""
     const docRef = doc(db, 'abilities', abilityName);
     const docSnap = await getDoc(docRef);
 
