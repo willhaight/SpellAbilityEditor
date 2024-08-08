@@ -155,6 +155,8 @@ async function fillAbilityData(abilityName) {
     }
 }
 
+//exiting modal
+
 document.getElementById('exitButton').onclick = function () {
     document.getElementById('characterList').innerHTML = ""
     document.getElementById('abilityList').innerHTML = ""
